@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { httpFactory } from '@angular/http/src/http_module';
+import { Http } from '@angular/http';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ravi-demo';
+  users = [];
+  
+  constructor (private http: Http){
+
+   
+    
+  }
+
+  ngOnInit() {
+    
+    
+  }
+  
+  
+
+  
 }
