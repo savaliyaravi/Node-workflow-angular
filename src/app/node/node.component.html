@@ -1,0 +1,38 @@
+<form #myform="ngForm" (ngSubmit)="check(myform)">
+<div class="input-group mb-3">
+   
+   <input ngModel="nodeTitle1" name="nodeTitle1" id="nodeTitle1" type="text" class="form-control" placeholder="Title" aria-label="Title" required>
+ </div>
+
+ <div class="input-group mb-3">
+   
+   <input ngModel="nodeContent1" name="nodeContent1" id="nodeContent1" type="text" class="form-control" placeholder="Content" aria-label="Content" required>
+ </div> 
+
+
+ <!--2nd sta node-->
+ <div class="input-group mb-3">
+   
+   <input  ngModel="nodeTitle2" name="nodeTitle2" id="nodeContent2" type="text" class="form-control" placeholder="Title" aria-label="Title" required>
+ </div>
+
+ <div class="input-group mb-3">
+   
+   <input  ngModel="nodeContent2" name="nodeContent2" id="nodeContent2" type="text" class="form-control" placeholder="Content" aria-label="Content" required>
+ </div> 
+<!--3rd sta node-->
+ <div class="input-group mb-3">
+   
+   <input  ngModel="nodeTitle3" name="nodeTitle3" id="nodeContent3" type="text" class="form-control" placeholder="Title" aria-label="Title" required>
+ </div>
+
+ <div class="input-group mb-3">
+   
+   <input  ngModel="nodeContent3" name="nodeContent3" id="nodeContent3" type="text" class="form-control" placeholder="Content" aria-label="Content" required>
+ </div> 
+
+ <button type="submit" class="btn btn-primary" value="nodeForm">submit</button>
+</form>
+
+
+<button type="button" class="btn btn-primary" onclick="addItem()">Add Node</button>
